@@ -4,6 +4,8 @@ import Button from '../components/common/Button';
 import { Property } from '../components/common/interfaces';
 export const DEFAULT_PROPERTY_IMAGE = '/assets/placeholder.png';
 
+const filters = ["Top Villa", "Self Checkin", "Free Parking", "Pet Friendly"];
+filters.map((filter) => <Pill key={filter} label={filter} />);
 const Home: React.FC = () => {
   const sampleProperty: Property = {
     id: 1,
